@@ -1,5 +1,8 @@
 (function () {
     'use strict';
+    
+    // load music
+    loadMusic();
 
     // create font
     var customFont = new FontFace('Custom Font', 'url(css/font/PT_Sans-Web-Regular.ttf)');
@@ -49,4 +52,25 @@ function animation() {
 
         element.style.left = `${-progress}px`;
     });
+}
+
+function loadMusic() {
+    var player = document.getElementById("audio-tag");
+    var btnToggle = document.getElementById("btnToggle");
+    
+    var isShown = true;
+    
+    btnToggle.addEventListener('click', function() {
+        if (isShown) {
+            // hide
+            player.style.display = "none";
+        } else {
+            // show
+            player.style.display = "block";
+        }
+        
+        isShown = !isShown;
+    });
+    
+    player.play();
 }

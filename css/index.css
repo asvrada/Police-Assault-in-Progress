@@ -116,4 +116,20 @@ body {
   100% {
     background-color: rgba(155, 227, 63, 0.3); } }
 
+/* line 170, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+#btnToggle {
+  cursor: pointer;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid grey; }
+
+/* line 184, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+#audio-tag {
+  position: fixed;
+  bottom: 20px;
+  left: 10px; }
+
 /*# sourceMappingURL=index.css.map */
