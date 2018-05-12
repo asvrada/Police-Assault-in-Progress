@@ -1,4 +1,8 @@
-/* line 10, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+@font-face {
+  font-family: "Custom Font";
+  src: url(font/PT_Sans-Web-Regular.ttf) format("truetype"); }
+
+/* line 15, /Users/jeff/Desktop/codes/WIP/css/index.scss */
 body {
   padding: 0;
   margin: 0;
@@ -6,16 +10,16 @@ body {
   background-color: black;
   color: white; }
 
-/* line 20, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+/* line 25, /Users/jeff/Desktop/codes/WIP/css/index.scss */
 .main {
   font-size: 40px;
   padding: 10px 0 0 10px; }
 
-/* line 26, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+/* line 31, /Users/jeff/Desktop/codes/WIP/css/index.scss */
 .inline-block {
   display: inline-block; }
 
-/* line 30, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+/* line 35, /Users/jeff/Desktop/codes/WIP/css/index.scss */
 .text-container {
   position: relative;
   box-sizing: border-box;
@@ -25,85 +29,85 @@ body {
   width: 600px;
   background-color: rgba(155, 227, 63, 0.3);
   animation: background-color-change 1s infinite; }
-  /* line 43, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+  /* line 48, /Users/jeff/Desktop/codes/WIP/css/index.scss */
   .text-container .text {
     font-size: 0;
     margin: 14px 0 14px 0;
     color: yellow;
-    font-family: "PT Sans";
+    font-family: "Custom Font";
     position: relative; }
-    /* line 44, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+    /* line 49, /Users/jeff/Desktop/codes/WIP/css/index.scss */
     .text-container .text > span {
       font-size: 40px; }
-    /* line 57, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+    /* line 62, /Users/jeff/Desktop/codes/WIP/css/index.scss */
     .text-container .text .separator {
       position: relative;
       bottom: 3px;
       padding-left: 60px;
       padding-right: 60px; }
-  /* line 67, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+  /* line 72, /Users/jeff/Desktop/codes/WIP/css/index.scss */
   .text-container .corner .left-top {
     position: absolute;
     top: 0;
     left: 0; }
-    /* line 68, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+    /* line 73, /Users/jeff/Desktop/codes/WIP/css/index.scss */
     .text-container .corner .left-top > div {
       background-color: yellow; }
-    /* line 76, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+    /* line 81, /Users/jeff/Desktop/codes/WIP/css/index.scss */
     .text-container .corner .left-top #left-top-1 {
       width: 15px;
       height: 3px; }
-    /* line 81, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+    /* line 86, /Users/jeff/Desktop/codes/WIP/css/index.scss */
     .text-container .corner .left-top #left-top-2 {
       width: 3px;
       height: 12px; }
-  /* line 87, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+  /* line 92, /Users/jeff/Desktop/codes/WIP/css/index.scss */
   .text-container .corner .right-top {
     position: absolute;
     top: 0;
     right: 0; }
-    /* line 88, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+    /* line 93, /Users/jeff/Desktop/codes/WIP/css/index.scss */
     .text-container .corner .right-top > div {
       background-color: yellow; }
-    /* line 97, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+    /* line 102, /Users/jeff/Desktop/codes/WIP/css/index.scss */
     .text-container .corner .right-top #right-top-1 {
       width: 15px;
       height: 3px; }
-    /* line 102, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+    /* line 107, /Users/jeff/Desktop/codes/WIP/css/index.scss */
     .text-container .corner .right-top #right-top-2 {
       margin-left: 12px;
       width: 3px;
       height: 12px; }
-  /* line 110, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+  /* line 115, /Users/jeff/Desktop/codes/WIP/css/index.scss */
   .text-container .corner .left-bottom {
     position: absolute;
     bottom: 0;
     left: 0; }
-    /* line 111, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+    /* line 116, /Users/jeff/Desktop/codes/WIP/css/index.scss */
     .text-container .corner .left-bottom > div {
       background-color: yellow; }
-    /* line 120, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+    /* line 125, /Users/jeff/Desktop/codes/WIP/css/index.scss */
     .text-container .corner .left-bottom #left-bottom-1 {
       width: 3px;
       height: 12px; }
-    /* line 125, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+    /* line 130, /Users/jeff/Desktop/codes/WIP/css/index.scss */
     .text-container .corner .left-bottom #left-bottom-2 {
       width: 15px;
       height: 3px; }
-  /* line 131, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+  /* line 136, /Users/jeff/Desktop/codes/WIP/css/index.scss */
   .text-container .corner .right-bottom {
     position: absolute;
     bottom: 0;
     right: 0; }
-    /* line 132, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+    /* line 137, /Users/jeff/Desktop/codes/WIP/css/index.scss */
     .text-container .corner .right-bottom > div {
       background-color: yellow; }
-    /* line 141, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+    /* line 146, /Users/jeff/Desktop/codes/WIP/css/index.scss */
     .text-container .corner .right-bottom #right-bottom-1 {
       margin-left: 12px;
       width: 3px;
       height: 12px; }
-    /* line 148, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+    /* line 153, /Users/jeff/Desktop/codes/WIP/css/index.scss */
     .text-container .corner .right-bottom #right-bottom-2 {
       width: 15px;
       height: 3px; }

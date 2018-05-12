@@ -1,6 +1,21 @@
 (function () {
     'use strict';
 
+    // create font
+    var customFont = new FontFace('Custom Font', 'url(../css/font/PT_Sans-Web-Regular.ttf)');
+    // add it to font faces
+    document.fonts.add(customFont);
+    // load it
+    customFont.load();
+
+    // on ready
+    customFont.loaded.then((e) => {
+        // run the animation
+        animation();
+    });
+})();
+
+function animation() {
     // span in pixel
     var element = document.getElementsByClassName("text")[0];
     var span = 0;
@@ -10,8 +25,6 @@
         span += element.children[lop].getBoundingClientRect().width;
     }
 
-    console.log(span);
-    
     // config animation, in milli sec
     var duration = 5000;
 
@@ -33,7 +46,7 @@
         }
 
         progress += delta / duration * span;
-        
+
         element.style.left = `${-progress}px`;
     });
-})();
+}

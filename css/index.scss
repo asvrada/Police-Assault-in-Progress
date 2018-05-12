@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Custom Font";
+    src: url(font/PT_Sans-Web-Regular.ttf) format("truetype");
+}
+
 $text-container-width: 600px;
 $text-font-size: 40px;
 $text-bg-color: rgba(155, 227, 63, 0.3);
@@ -50,7 +55,7 @@ body {
         
         margin: 0.05*$text-font-size+($ratio - 1)*$width 0 0.05*$text-font-size+($ratio - 1)*$width 0;
         color: $text-color;
-        font-family: "PT Sans";
+        font-family: "Custom Font";
         
         position: relative;
         
@@ -166,4 +171,6 @@ body {
         background-color: $text-bg-color;
     }
 }
+
+
 
