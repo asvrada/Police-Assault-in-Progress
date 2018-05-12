@@ -28,12 +28,15 @@ body {
 }
 
 .text-container {
+    margin: $text-container-width / 4 auto 0 auto;
+
     position: relative;
     box-sizing: border-box;
 
     white-space: nowrap;
     overflow: hidden;
     text-overflow: clip;
+    user-select: none;
     width: $text-container-width;
 
     background-color: $text-bg-color;
@@ -43,21 +46,21 @@ body {
     .text {
         > span {
             font-size: $text-font-size;
-        }
+        } 
         
         // clear space between inline block
         font-size: 0;
-        
-        margin: 0.05*$text-font-size+($ratio - 1)*$width 0 0.05*$text-font-size+($ratio - 1)*$width 0;
+
+        margin: 0.05*$text-font-size + ($ratio - 1)*$width 0 0.05*$text-font-size + ($ratio - 1)*$width 0;
         color: $text-color;
         font-family: "Custom Font";
-        
+
         position: relative;
-        
+
         .separator {
             position: relative;
             bottom: 3px;
-            
+
             padding-left: 60px;
             padding-right: 60px;
         }
@@ -169,21 +172,21 @@ body {
 
 #btnToggle {
     cursor: pointer;
-    
+
     position: fixed;
-    
+
     bottom: 5px;
     right: 5px;
-    
+
     padding: 5px;
-    
+
     border-radius: 5px;
     border: 1px solid grey;
 }
 
 #audio-tag {
     position: fixed;
-    
+
     bottom: 20px;
     left: 10px;
 }
