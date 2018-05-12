@@ -51,7 +51,7 @@ function animation() {
         progress += delta / duration * span;
 
         element.style.left = `${-progress}px`;
-    });
+    }, 1000/60);
 }
 
 function loadMusic() {
