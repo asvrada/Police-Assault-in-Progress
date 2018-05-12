@@ -60,8 +60,6 @@ function loadMusic() {
 
     var isShown = true;
 
-    player.play();
-
     // toggle on btn press
     btnToggle.addEventListener('click', function () {
         if (isShown) {
