@@ -1,0 +1,171 @@
+$text-container-width: 600px;
+$text-font-size: 40px;
+$text-bg-color: rgba(155, 227, 63, 0.5);
+$text-color: yellow;
+
+// corner
+$width: 5px;
+$ratio: 3;
+
+body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+
+    background-color: black;
+
+    color: white;
+}
+
+.main {
+    font-size: $text-font-size;
+
+    padding: 10px 0 0 10px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.text-container {
+    position: relative;
+    box-sizing: border-box;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    width: $text-container-width;
+
+    background-color: $text-bg-color;
+
+    animation: background-color-change 1s infinite;
+
+    .text {
+        margin: 0.2*$text-font-size+($ratio - 1)*$width 0 0.2*$text-font-size+($ratio - 1)*$width 0;
+        color: $text-color;
+        font-family: "PT Sans";
+        
+        animation: moving-text 4s linear infinite;
+        
+        .separator {
+            position: relative;
+            bottom: 3px;
+            
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+    }
+
+    .corner {
+        .left-top {
+            > div {
+                background-color: yellow;
+            }
+
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            #left-top-1 {
+                width: $width * $ratio;
+                height: $width;
+            }
+
+            #left-top-2 {
+                width: $width;
+                height: $width * ($ratio - 1);
+            }
+        }
+
+        .right-top {
+            > div {
+                background-color: yellow;
+            }
+
+            position: absolute;
+
+            top: 0;
+            right: 0;
+
+            #right-top-1 {
+                width: $width * $ratio;
+                height: $width;
+            }
+
+            #right-top-2 {
+                margin-left: $width * ($ratio - 1);
+
+                width: $width;
+                height: $width * ($ratio - 1);
+            }
+        }
+
+        .left-bottom {
+            > div {
+                background-color: yellow;
+            }
+
+            position: absolute;
+
+            bottom: 0;
+            left: 0;
+
+            #left-bottom-1 {
+                width: $width;
+                height: $width * ($ratio - 1);
+            }
+
+            #left-bottom-2 {
+                width: $width * $ratio;
+                height: $width;
+            }
+        }
+
+        .right-bottom {
+            > div {
+                background-color: yellow;
+            }
+
+            position: absolute;
+
+            bottom: 0;
+            right: 0;
+
+            #right-bottom-1 {
+                margin-left: $width * ($ratio - 1);
+
+                width: $width;
+                height: $width * ($ratio - 1);
+            }
+
+            #right-bottom-2 {
+                width: $width * $ratio;
+                height: $width;
+            }
+        }
+    }
+}
+
+@keyframes background-color-change {
+    0% {
+        background-color: $text-bg-color;
+    }
+
+    50% {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        background-color: $text-bg-color;
+    }
+}
+
+@keyframes moving-text {
+    0% {
+        margin-left: 0;
+    }
+    
+    100% {
+        margin-left: -677px;
+    }
+}

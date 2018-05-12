@@ -1,0 +1,121 @@
+/* line 10, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+body {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: black;
+  color: white; }
+
+/* line 20, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+.main {
+  font-size: 40px;
+  padding: 10px 0 0 10px; }
+
+/* line 26, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+.inline-block {
+  display: inline-block; }
+
+/* line 30, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+.text-container {
+  position: relative;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  width: 600px;
+  background-color: rgba(155, 227, 63, 0.5);
+  animation: background-color-change 1s infinite; }
+  /* line 43, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+  .text-container .text {
+    margin: 18px 0 18px 0;
+    color: yellow;
+    font-family: "PT Sans";
+    animation: moving-text 4s linear infinite; }
+    /* line 50, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+    .text-container .text .separator {
+      position: relative;
+      bottom: 3px;
+      margin-left: 40px;
+      margin-right: 40px; }
+  /* line 60, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+  .text-container .corner .left-top {
+    position: absolute;
+    top: 0;
+    left: 0; }
+    /* line 61, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+    .text-container .corner .left-top > div {
+      background-color: yellow; }
+    /* line 69, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+    .text-container .corner .left-top #left-top-1 {
+      width: 15px;
+      height: 5px; }
+    /* line 74, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+    .text-container .corner .left-top #left-top-2 {
+      width: 5px;
+      height: 10px; }
+  /* line 80, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+  .text-container .corner .right-top {
+    position: absolute;
+    top: 0;
+    right: 0; }
+    /* line 81, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+    .text-container .corner .right-top > div {
+      background-color: yellow; }
+    /* line 90, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+    .text-container .corner .right-top #right-top-1 {
+      width: 15px;
+      height: 5px; }
+    /* line 95, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+    .text-container .corner .right-top #right-top-2 {
+      margin-left: 10px;
+      width: 5px;
+      height: 10px; }
+  /* line 103, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+  .text-container .corner .left-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+    /* line 104, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+    .text-container .corner .left-bottom > div {
+      background-color: yellow; }
+    /* line 113, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+    .text-container .corner .left-bottom #left-bottom-1 {
+      width: 5px;
+      height: 10px; }
+    /* line 118, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+    .text-container .corner .left-bottom #left-bottom-2 {
+      width: 15px;
+      height: 5px; }
+  /* line 124, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+  .text-container .corner .right-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+    /* line 125, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+    .text-container .corner .right-bottom > div {
+      background-color: yellow; }
+    /* line 134, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+    .text-container .corner .right-bottom #right-bottom-1 {
+      margin-left: 10px;
+      width: 5px;
+      height: 10px; }
+    /* line 141, /Users/jeff/Desktop/codes/WIP/css/index.scss */
+    .text-container .corner .right-bottom #right-bottom-2 {
+      width: 15px;
+      height: 5px; }
+
+@keyframes background-color-change {
+  0% {
+    background-color: rgba(155, 227, 63, 0.5); }
+  50% {
+    background-color: transparent; }
+  100% {
+    background-color: rgba(155, 227, 63, 0.5); } }
+
+@keyframes moving-text {
+  0% {
+    margin-left: 0; }
+  100% {
+    margin-left: -677px; } }
+
+/*# sourceMappingURL=index.css.map */
