@@ -1,6 +1,6 @@
 (function () {
     'use strict';
-    
+
     // load music
     loadMusic();
 
@@ -51,16 +51,19 @@ function animation() {
         progress += delta / duration * span;
 
         element.style.left = `${-progress}px`;
-    }, 1000/60);
+    }, 1000 / 60);
 }
 
 function loadMusic() {
     var player = document.getElementById("audio-tag");
     var btnToggle = document.getElementById("btnToggle");
-    
+
     var isShown = true;
-    
-    btnToggle.addEventListener('click', function() {
+
+    player.play();
+
+    // toggle on btn press
+    btnToggle.addEventListener('click', function () {
         if (isShown) {
             // hide
             player.style.display = "none";
@@ -68,9 +71,12 @@ function loadMusic() {
             // show
             player.style.display = "block";
         }
-        
+
         isShown = !isShown;
     });
     
-    player.play();
+    // pause on lose focus
+    document.addEventListener("visibilitychange", function() {
+        player.pause();
+    })
 }
