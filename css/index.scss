@@ -1,11 +1,11 @@
 $text-container-width: 600px;
 $text-font-size: 40px;
-$text-bg-color: rgba(155, 227, 63, 0.5);
+$text-bg-color: rgba(155, 227, 63, 0.3);
 $text-color: yellow;
 
 // corner
-$width: 5px;
-$ratio: 3;
+$width: 3px;
+$ratio: 5;
 
 body {
     padding: 0;
@@ -41,18 +41,25 @@ body {
     animation: background-color-change 1s infinite;
 
     .text {
-        margin: 0.2*$text-font-size+($ratio - 1)*$width 0 0.2*$text-font-size+($ratio - 1)*$width 0;
+        > span {
+            font-size: $text-font-size;
+        }
+        
+        // clear space between inline block
+        font-size: 0;
+        
+        margin: 0.05*$text-font-size+($ratio - 1)*$width 0 0.05*$text-font-size+($ratio - 1)*$width 0;
         color: $text-color;
         font-family: "PT Sans";
         
-        animation: moving-text 4s linear infinite;
+        position: relative;
         
         .separator {
             position: relative;
             bottom: 3px;
             
-            margin-left: 40px;
-            margin-right: 40px;
+            padding-left: 60px;
+            padding-right: 60px;
         }
     }
 
@@ -160,12 +167,3 @@ body {
     }
 }
 
-@keyframes moving-text {
-    0% {
-        margin-left: 0;
-    }
-    
-    100% {
-        margin-left: -677px;
-    }
-}
