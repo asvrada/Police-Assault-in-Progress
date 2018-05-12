@@ -2,7 +2,7 @@
     'use strict';
 
     // create font
-    var customFont = new FontFace('Custom Font', 'url(../css/font/PT_Sans-Web-Regular.ttf)');
+    var customFont = new FontFace('Custom Font', 'url(css/font/PT_Sans-Web-Regular.ttf)');
     // add it to font faces
     document.fonts.add(customFont);
     // load it
