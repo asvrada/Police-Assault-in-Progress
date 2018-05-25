@@ -1,8 +1,7 @@
+/* eslint-env browser */
+
 (function () {
     'use strict';
-
-    // load music
-    loadMusic();
 
     // create font
     var customFont = new FontFace('Custom Font', 'url(css/font/PT_Sans-Web-Regular.ttf)');
@@ -10,9 +9,8 @@
     document.fonts.add(customFont);
     // load it
     customFont.load();
-
     // on ready
-    customFont.loaded.then((e) => {
+    customFont.loaded.then(() => {
         // run the animation
         animation();
     });
@@ -54,27 +52,3 @@ function animation() {
     }, 1000 / 60);
 }
 
-function loadMusic() {
-    var player = document.getElementById("audio-tag");
-    var btnToggle = document.getElementById("btnToggle");
-
-    var isShown = true;
-
-    // toggle on btn press
-    btnToggle.addEventListener('click', function () {
-        if (isShown) {
-            // hide
-            player.style.display = "none";
-        } else {
-            // show
-            player.style.display = "block";
-        }
-
-        isShown = !isShown;
-    });
-    
-    // pause on lose focus
-    document.addEventListener("visibilitychange", function() {
-        player.pause();
-    })
-}

@@ -28,7 +28,7 @@ body {
 }
 
 .text-container {
-    margin: $text-container-width / 4 auto 0 auto;
+    margin: $text-container-width / 5 auto 0 auto;
 
     position: relative;
     box-sizing: border-box;
@@ -51,7 +51,7 @@ body {
         // clear space between inline block
         font-size: 0;
 
-        margin: 0.05*$text-font-size + ($ratio - 1)*$width 0 0.05*$text-font-size + ($ratio - 1)*$width 0;
+        margin: (0.05 * $text-font-size + ($ratio - 1) * $width) 0 (0.05 * $text-font-size + ($ratio - 1) * $width) 0;
         color: $text-color;
         font-family: "Custom Font";
 
@@ -170,23 +170,3 @@ body {
     }
 }
 
-#btnToggle {
-    cursor: pointer;
-
-    position: fixed;
-
-    bottom: 5px;
-    right: 5px;
-
-    padding: 5px;
-
-    border-radius: 5px;
-    border: 1px solid grey;
-}
-
-#audio-tag {
-    position: fixed;
-
-    bottom: 20px;
-    left: 10px;
-}
