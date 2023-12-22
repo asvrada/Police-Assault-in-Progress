@@ -1,121 +1,127 @@
-/* line 10, /Users/jeff/IDEProjects/Web/Police-Assault-in-Progress/css/index.scss */
 body {
   padding: 0;
   margin: 0;
   border: 0;
   background-color: black;
-  color: white; }
+  color: white;
+}
 
-/* line 20, /Users/jeff/IDEProjects/Web/Police-Assault-in-Progress/css/index.scss */
 .main {
-  font-size: 40px;
-  padding: 10px 0 0 10px; }
+  font-size: 44px;
+  padding: 10px 0 0 10px;
+}
 
-/* line 26, /Users/jeff/IDEProjects/Web/Police-Assault-in-Progress/css/index.scss */
 .inline-block {
-  display: inline-block; }
+  display: inline-block;
+}
 
-/* line 30, /Users/jeff/IDEProjects/Web/Police-Assault-in-Progress/css/index.scss */
 .text-container {
-  margin: 120px auto 0 auto;
+  margin: 95px auto 0 auto;
   position: relative;
   box-sizing: border-box;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: clip;
   user-select: none;
-  width: 600px;
+  width: 475px;
+  height: 76px;
   background-color: rgba(155, 227, 63, 0.3);
-  animation: background-color-change 1s infinite; }
-  /* line 46, /Users/jeff/IDEProjects/Web/Police-Assault-in-Progress/css/index.scss */
-  .text-container .text {
-    font-size: 0;
-    margin: 14px 0 14px 0;
-    color: yellow;
-    font-family: "Custom Font";
-    position: relative; }
-    /* line 47, /Users/jeff/IDEProjects/Web/Police-Assault-in-Progress/css/index.scss */
-    .text-container .text > span {
-      font-size: 40px; }
-    /* line 60, /Users/jeff/IDEProjects/Web/Police-Assault-in-Progress/css/index.scss */
-    .text-container .text .separator {
-      position: relative;
-      bottom: 3px;
-      padding-left: 60px;
-      padding-right: 60px; }
-  /* line 70, /Users/jeff/IDEProjects/Web/Police-Assault-in-Progress/css/index.scss */
-  .text-container .corner .left-top {
-    position: absolute;
-    top: 0;
-    left: 0; }
-    /* line 71, /Users/jeff/IDEProjects/Web/Police-Assault-in-Progress/css/index.scss */
-    .text-container .corner .left-top > div {
-      background-color: yellow; }
-    /* line 79, /Users/jeff/IDEProjects/Web/Police-Assault-in-Progress/css/index.scss */
-    .text-container .corner .left-top #left-top-1 {
-      width: 15px;
-      height: 3px; }
-    /* line 84, /Users/jeff/IDEProjects/Web/Police-Assault-in-Progress/css/index.scss */
-    .text-container .corner .left-top #left-top-2 {
-      width: 3px;
-      height: 12px; }
-  /* line 90, /Users/jeff/IDEProjects/Web/Police-Assault-in-Progress/css/index.scss */
-  .text-container .corner .right-top {
-    position: absolute;
-    top: 0;
-    right: 0; }
-    /* line 91, /Users/jeff/IDEProjects/Web/Police-Assault-in-Progress/css/index.scss */
-    .text-container .corner .right-top > div {
-      background-color: yellow; }
-    /* line 100, /Users/jeff/IDEProjects/Web/Police-Assault-in-Progress/css/index.scss */
-    .text-container .corner .right-top #right-top-1 {
-      width: 15px;
-      height: 3px; }
-    /* line 105, /Users/jeff/IDEProjects/Web/Police-Assault-in-Progress/css/index.scss */
-    .text-container .corner .right-top #right-top-2 {
-      margin-left: 12px;
-      width: 3px;
-      height: 12px; }
-  /* line 113, /Users/jeff/IDEProjects/Web/Police-Assault-in-Progress/css/index.scss */
-  .text-container .corner .left-bottom {
-    position: absolute;
-    bottom: 0;
-    left: 0; }
-    /* line 114, /Users/jeff/IDEProjects/Web/Police-Assault-in-Progress/css/index.scss */
-    .text-container .corner .left-bottom > div {
-      background-color: yellow; }
-    /* line 123, /Users/jeff/IDEProjects/Web/Police-Assault-in-Progress/css/index.scss */
-    .text-container .corner .left-bottom #left-bottom-1 {
-      width: 3px;
-      height: 12px; }
-    /* line 128, /Users/jeff/IDEProjects/Web/Police-Assault-in-Progress/css/index.scss */
-    .text-container .corner .left-bottom #left-bottom-2 {
-      width: 15px;
-      height: 3px; }
-  /* line 134, /Users/jeff/IDEProjects/Web/Police-Assault-in-Progress/css/index.scss */
-  .text-container .corner .right-bottom {
-    position: absolute;
-    bottom: 0;
-    right: 0; }
-    /* line 135, /Users/jeff/IDEProjects/Web/Police-Assault-in-Progress/css/index.scss */
-    .text-container .corner .right-bottom > div {
-      background-color: yellow; }
-    /* line 144, /Users/jeff/IDEProjects/Web/Police-Assault-in-Progress/css/index.scss */
-    .text-container .corner .right-bottom #right-bottom-1 {
-      margin-left: 12px;
-      width: 3px;
-      height: 12px; }
-    /* line 151, /Users/jeff/IDEProjects/Web/Police-Assault-in-Progress/css/index.scss */
-    .text-container .corner .right-bottom #right-bottom-2 {
-      width: 15px;
-      height: 3px; }
+  animation: background-color-change 1s infinite;
+  animation-timing-function: ease-in-out;
+}
+.text-container .text {
+  font-size: 0;
+  letter-spacing: 1px;
+  margin: 14.2px 0 14.2px 0;
+  color: yellow;
+  font-family: "DINEngschrift";
+  position: relative;
+}
+.text-container .text > span {
+  font-size: 44px;
+}
+.text-container .text .separator {
+  position: relative;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.text-container .corner .left-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.text-container .corner .left-top > div {
+  background-color: yellow;
+}
+.text-container .corner .left-top #left-top-1 {
+  width: 15px;
+  height: 3px;
+}
+.text-container .corner .left-top #left-top-2 {
+  width: 3px;
+  height: 12px;
+}
+.text-container .corner .right-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.text-container .corner .right-top > div {
+  background-color: yellow;
+}
+.text-container .corner .right-top #right-top-1 {
+  width: 15px;
+  height: 3px;
+}
+.text-container .corner .right-top #right-top-2 {
+  margin-left: 12px;
+  width: 3px;
+  height: 12px;
+}
+.text-container .corner .left-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.text-container .corner .left-bottom > div {
+  background-color: yellow;
+}
+.text-container .corner .left-bottom #left-bottom-1 {
+  width: 3px;
+  height: 12px;
+}
+.text-container .corner .left-bottom #left-bottom-2 {
+  width: 15px;
+  height: 3px;
+}
+.text-container .corner .right-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.text-container .corner .right-bottom > div {
+  background-color: yellow;
+}
+.text-container .corner .right-bottom #right-bottom-1 {
+  margin-left: 12px;
+  width: 3px;
+  height: 12px;
+}
+.text-container .corner .right-bottom #right-bottom-2 {
+  width: 15px;
+  height: 3px;
+}
 
 @keyframes background-color-change {
   0% {
-    background-color: rgba(155, 227, 63, 0.3); }
+    background-color: rgba(155, 227, 63, 0.3);
+  }
   50% {
-    background-color: transparent; }
+    background-color: rgba(0, 0, 0, 0);
+  }
   100% {
-    background-color: rgba(155, 227, 63, 0.3); } }
+    background-color: rgba(155, 227, 63, 0.3);
+  }
+}
 
 /*# sourceMappingURL=index.css.map */

@@ -4,7 +4,7 @@
     'use strict';
 
     // create font
-    var customFont = new FontFace('Custom Font', 'url(css/font/PT_Sans-Web-Regular.ttf)');
+    var customFont = new FontFace('DINEngschrift', 'url(css/font/DINEngschrift-Regular.ttf)');
     // add it to font faces
     document.fonts.add(customFont);
     // load it
@@ -27,7 +27,7 @@ function animation() {
     }
 
     // config animation, in milli sec
-    var duration = 5000;
+    var duration = 3500;
 
     // runtime
     var prevTime = new Date();

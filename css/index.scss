@@ -1,5 +1,7 @@
-$text-container-width: 600px;
-$text-font-size: 40px;
+// Aspect ratio is around 6.25 : 1
+$text-container-height: 76px;
+$text-container-width: calc($text-container-height * 6.25);
+$text-font-size: 44px;
 $text-bg-color: rgba(155, 227, 63, 0.3);
 $text-color: yellow;
 
@@ -28,7 +30,7 @@ body {
 }
 
 .text-container {
-    margin: $text-container-width / 5 auto 0 auto;
+    margin: calc($text-container-width / 5) auto 0 auto;
 
     position: relative;
     box-sizing: border-box;
@@ -38,10 +40,12 @@ body {
     text-overflow: clip;
     user-select: none;
     width: $text-container-width;
+    height: $text-container-height;
 
     background-color: $text-bg-color;
 
     animation: background-color-change 1s infinite;
+    animation-timing-function: ease-in-out;
 
     .text {
         > span {
@@ -50,16 +54,16 @@ body {
         
         // clear space between inline block
         font-size: 0;
+        letter-spacing: 1px;
 
         margin: (0.05 * $text-font-size + ($ratio - 1) * $width) 0 (0.05 * $text-font-size + ($ratio - 1) * $width) 0;
         color: $text-color;
-        font-family: "Custom Font";
+        font-family: "DINEngschrift";
 
         position: relative;
 
         .separator {
             position: relative;
-            bottom: 3px;
 
             padding-left: 60px;
             padding-right: 60px;
